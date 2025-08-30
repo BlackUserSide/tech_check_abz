@@ -14,7 +14,7 @@
 
 ## 🚀 Live Demo
 
-👉 [https://your-deployment-url.com](https://your-deployment-url.com)
+👉 [https://BlackUserSide.github.io/tech_check_abz](https://BlackUserSide.github.io/tech_check_abz/)
 
 ---
 
