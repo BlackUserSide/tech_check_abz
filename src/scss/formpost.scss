@@ -1,0 +1,126 @@
+.form-add-user {
+  padding: 0 var(--left-right-pad-section) 100px;
+
+  .main-add-user-form {
+    .container-btn-sign-up {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .position-container {
+      .title-position {
+        margin-bottom: 11px;
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: 0;
+
+        }
+      }
+
+      margin-bottom: 47px;
+
+      .position-check-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 7px;
+
+        .select-circle-container {
+          width: 20px;
+          height: 20px;
+          border: 1px solid var(--grey-inp);
+          border-radius: 50%;
+          transition: all .3s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &.is-active {
+            border-color: var(--second-color);
+          }
+
+          .active-circle {
+            width: 10px;
+            height: 10px;
+            background: var(--second-color);
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+    .container-input {
+      margin-bottom: 50px;
+
+      .tools-tip {
+        padding-top: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0;
+      }
+    }
+
+
+    .file-upload {
+      display: flex;
+      align-items: center;
+      border: 1px solid #d0cfcf;
+      border-radius: 4px;
+      overflow: hidden;
+      height: 54px;
+      width: 100%;
+      cursor: pointer;
+
+      &:hover {
+        border-color: #bcbcbc;
+      }
+
+      .btn-upload-inp {
+        height: 100%;
+        padding: 0 28px;
+        background-color: #fff;
+        border: 1px solid #000000DE;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0;
+        text-align: center;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+
+        &:hover {
+          background-color: #f8f8f8;
+        }
+      }
+
+      .file-upload-name {
+        flex-grow: 1;
+        padding: 0 16px;
+        font-size: 16px;
+        color: #7e7e7e;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .file-upload-inp {
+        display: none;
+      }
+    }
+
+  }
+}
+
+@media (min-width: 768px) {
+  .main-add-user-form {
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

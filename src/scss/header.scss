@@ -1,0 +1,16 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  padding: 13px 16px;
+  justify-content: space-between;
+  background: var(--white-color);
+  .logo-container {
+    width: 100px;
+    height: 26px;
+    flex: 0 0 104px;
+  }
+  .container-btns {
+    display: flex;
+    gap: 10px
+  }
+}

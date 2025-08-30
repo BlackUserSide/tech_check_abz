@@ -1,0 +1,134 @@
+@use 'header';
+@use 'heroimage';
+@use 'loader';
+@use 'usersection';
+@use 'usercard';
+@use 'formpost';
+
+body {
+  background: var(--main-bg-color);
+  font-family: Nunito, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.notyf {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  max-width: 100vw;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  pointer-events: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-btn {
+  width: 100px;
+  background: var(--main-color);
+  border: none;
+  border-radius: 80px;
+  height: 34px;
+
+  span {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: Nunito, sans-serif;
+
+  }
+}
+
+.top-line-title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  .h3 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0;
+  }
+}
+
+.main-input {
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+  height: 54px;
+  padding: 14px 16px;
+  border: 1px solid var(--grey-inp);
+  background: transparent;
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 26px;
+  letter-spacing: 0;
+  transition: .3s ease all;
+  margin-bottom: 4px;
+
+  &.is-danger {
+    border-color: var(--danger-color);
+
+
+  }
+
+  &::placeholder {
+    color: var(--inp-placeholder);
+  }
+
+}
+
+.error-inp {
+  color: var(--danger-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0;
+
+}
+
+:root {
+  --main-color: #F4E041;
+  --second-color: #00BDD3;
+  --grey-color: #EFEFEF;
+  --white-color: #fff;
+  --main-bg-color: #F8F8F8;
+  --grey-inp: #D0CFCF;
+  --inp-placeholder: #7E7E7E;
+  --danger-color: #CB3D40;
+  --left-right-pad-section: 16px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --left-right-pad-section: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --left-right-pad-section: 60px;
+  }
+}
